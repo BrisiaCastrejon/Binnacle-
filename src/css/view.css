@@ -1,0 +1,27 @@
+body {
+  background-color: antiquewhite;
+}
+#exit {
+  float: right !important;
+  font-size: 30px;
+}
+.botones {
+  background-color: antiquewhite !important;
+  border-radius: 100px;
+}
+main {
+  margin-top: 50px;
+}
+.btn-primary {
+  background-color: #343A40 !important;
+  border-color: #343A40 !important;
+  float: right;
+}
+
+.icon-pencil{
+color: #FF6550;
+}
+.icon-trash{
+color: #FF6550;
+}
+

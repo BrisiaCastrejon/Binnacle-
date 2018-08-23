@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Brisia-Icons';
+  src:  url('fonts/Brisia-Icons.eot?2hh4an');
+  src:  url('fonts/Brisia-Icons.eot?2hh4an#iefix') format('embedded-opentype'),
+    url('fonts/Brisia-Icons.ttf?2hh4an') format('truetype'),
+    url('fonts/Brisia-Icons.woff?2hh4an') format('woff'),
+    url('fonts/Brisia-Icons.svg?2hh4an#Brisia-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Brisia-Icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-subtract:before {
+  content: "\e900";
+}
+.icon-pencil:before {
+  content: "\e902";
+}
+.icon-bookmark:before {
+  content: "\e903";
+}
+.icon-love:before {
+  content: "\e904";
+}
+.icon-trash:before {
+  content: "\e906";
+}
+.icon-star:before {
+  content: "\e907";
+}
+.icon-addthis:before {
+  content: "\e908";
+  color: #ff6550;
+}
+.icon-applemusic:before {
+  content: "\e909";
+}
+.icon-facebook:before {
+  content: "\e90a";
+  color: #3b5998;
+}
+.icon-github:before {
+  content: "\e90b";
+}
+.icon-gmail:before {
+  content: "\e90c";
+  color: #d14836;
+}
+.icon-google:before {
+  content: "\e90d";
+  color: #4285f4;
+}
+.icon-googleplus:before {
+  content: "\e90e";
+  color: #dc4e41;
+}
+.icon-instagram:before {
+  content: "\e90f";
+  color: #e4405f;
+}
+.icon-meetup:before {
+  content: "\e910";
+  color: #ed1c40;
+}
+.icon-spotify:before {
+  content: "\e911";
+  color: #1ed760;
+}
+.icon-stackoverflow:before {
+  content: "\e912";
+  color: #fe7a16;
+}
+.icon-off:before {
+  content: "\e913";
+  color: #e01b22;
+}
+.icon-twitter:before {
+  content: "\e914";
+  color: #1da1f2;
+}
+.icon-camera:before {
+  content: "\e915";
+}
+.icon-wikipedia:before {
+  content: "\e916";
+}
+.icon-youtube:before {
+  content: "\e917";
+  color: #f00;
+}
