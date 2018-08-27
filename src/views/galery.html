@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../tools/imges/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="../tools/fonts/style.css">
   <link rel="stylesheet" href="../css/galery.css">
@@ -19,10 +20,9 @@
               <img class="img-fluid pt-2" id="imgWhite" width="200px" src="../tools/imges/logo-blanco-chico.png"> <br> <br> 
               <section class="container-fluid" id="botones">
                 <article class="row">
-                  	<section	class="col-md-3"><button class="btn-block active botones" id="miBitacora" > Mi Bitácora</button></section>
+                  	<section	class="col-md-3"><button class="btn-block active botones" id="miBitacora" ><span class="icon-applemusic"></span>Repoductor </button></section>
                     <section	class="col-md-3"><button class="btn-block active botones" id="misNotas"><span class="icon-bookmark"></span> Notas</button></section>
-                    <section	class="col-md-3"><button class="btn-block active botones" id="miGaleria" ><span class="icon-camera"></span> Galería</button></section>
-                    <section	class="col-md-3"><button class="btn-block active botones" id="miReproductor" ><span class="icon-applemusic"></span> Reproductor</button></section>            
+                    <section	class="col-md-3"><button class="btn-block active botones" id="miGaleria" ><span class="icon-camera"></span> Galería</button></section>         
                 </article>                  
               </section>
             </article>
@@ -36,10 +36,13 @@
   </header>
   
   <div id="sectionVideo">
-      <progress value="0" max="100" id="uploader">0%</progress>
-      <input type="file" value="upload" id="fileButton">
+    <input type="file" value="upload" id="fileButton" onclick="showPictures()">
   </div>
-  
+
+  <section id="galery"> </section>
+
+      
+    
  
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script> 
@@ -47,7 +50,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="../js/credentials.js"></script>
-  <script src="../js/view.js"></script>
+  <!-- <script src="../js/view.js"></script> -->
   <script src="../js/saveImages.js"></script>
 
 </body>
