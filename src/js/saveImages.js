@@ -1,15 +1,31 @@
-let fileButton = document.getElementById('fileButton');
-let uploader = document.getElementById('uploader');
+const exit = document.getElementById('exit');
+exit.addEventListener('click', event => {
+  location.href = '../index.html'
+});
 
-fileButton.addEventListener('change', event => {
- let file = event.target.files[0];
- const storage = firebase.storage().ref('images/' + file.name);
+let miBitacora = document.getElementById('miBitacora');
+let misNotas = document.getElementById('misNotas');
+let miGaleria = document.getElementById('miGaleria');
 
- let task = storage.put(file);
- task.on('state_changed', 
- progress = (snapshot) => {
-  let percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100; 
-  uploader.value = percentage;
-})
+miBitacora.addEventListener('click', event => {
+  location.href = '../views/view.html';
+});
+
+misNotas.addEventListener('click', event => {
+  location.href = '../views/notes.html';
 
 });
+
+miGaleria.addEventListener('click', event => {
+  location.href = '../views/galery.html';
+});
+
+const showPictures = () => {
+  let galery = document.getElementById('galery');
+  let files = document.getElementById('fileButton').files;
+  for (i = 0; i < files.length; i++) {
+    imgTag = document.createElement('img');
+    imgTag.src = URL.createObjectURL(files[i]);
+    galery.appendChild(imgTag);
+  }
+};
